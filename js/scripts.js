@@ -1,3 +1,4 @@
+// business logic section
 //take in user input, if userInput > 3,999 alert "not possible", else pass userInput into 'translate function
 
 
@@ -15,3 +16,7 @@
 //var hundreds = function(userInput){};
 
 //var thousands = function(userInput){};
+
+
+// ui logic
+// take in user data, output translated number to page
