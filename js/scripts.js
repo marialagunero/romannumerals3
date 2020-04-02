@@ -32,8 +32,9 @@ $(document).ready(function(){
     event.preventDefault(); 
     var userInput = $("#numbers").val();
     alert("hi");
-    var result = translate(userInput);
-    
+    //var result = translate(userInput);
+    var tooLargeOutPut = tooLarge(userInput);
+    console.log(tooLargeOutPut);
 
 
   });
