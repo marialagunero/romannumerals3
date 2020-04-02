@@ -1,10 +1,11 @@
 // business logic section
 //take in user input, if userInput > 3,999 alert "not possible", else pass userInput into 'translate function
 var tooLarge = function(userNumber) {
-  if (userNumber > 3,999){
+  if (userNumber > 3,999 === true){
     alert('sorry, your number is too large. Roman numerals can only count to 3,999');
   } else {
-    return translate(userNumber);
+    alert('number is useable');
+    //translate(userNumber);
   }
 };
 
@@ -30,13 +31,9 @@ var tooLarge = function(userNumber) {
 $(document).ready(function(){
   $("form#numeralsForm").submit(function(event) {
     event.preventDefault(); 
-    var userInput = $("#numbers").val();
-    alert("hi");
+    var userInput = parseInt($("#numbers").val());
     //var result = translate(userInput);
-    var tooLargeOutPut = tooLarge(userInput);
-    console.log(tooLargeOutPut);
-
-
+    var tooLargeOutput = tooLarge(userInput);
   });
 
 });
