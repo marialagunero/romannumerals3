@@ -1,5 +1,12 @@
 // business logic section
 //take in user input, if userInput > 3,999 alert "not possible", else pass userInput into 'translate function
+var tooLarge = function(userNumber) {
+  if (userNumber > 3,999){
+    alert('sorry, your number is too large. Roman numerals can only count to 3,999');
+  } else {
+    return translate(userNumber);
+  }
+};
 
 
 //Translate function: 
