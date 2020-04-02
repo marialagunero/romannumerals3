@@ -1,5 +1,13 @@
 // business logic section
 //take in user input, if userInput > 3,999 alert "not possible", else pass userInput into 'translate function
+var I = 1;
+var V = 5;
+var X = 10;
+var L = 50;
+var C = 100;
+var D = 500;
+var M = 1000;
+
 var tooLarge = function(userNumber) {
   console.log(userNumber);
   if (userNumber > 3999 ){
@@ -24,29 +32,20 @@ var translate = function(x) {
 //5.  else userInput.length = 4, separate first,second, third and 4th digits. use 'ones' function on digit in ones position, use 'tens' function on digit in tens position, use 'hundreds' function on digit in hundreds position. use 'thousands' function on digit in the thousands position. return digits and combine them back for userOutput
 };
 
-//var ones = function(userInput){};
+//var onesFunction = function(userInput){};
 var onesFunction = function(onesDigit){
  if (onesDigit === 1){ 
-  alert('ones function is working kind of'+ onesDigit);
-  //return 'I';
- } else if (onesDigit === 2) {
-   alert('onesFunction working when input is 2' + ' ' +onesDigit);
-   return 'II';
- } else if (onesDigit === 3){
-   alert('onesFunction working when input is 3')
-   return 'III';
- } else if (onesDigit === 4){
-   return 'IV';
+  return 'I';
  }
 };
 
 onesFunction(3);
 
-//var tens = function(userInput){};
+//var tensFunction = function(userInput){};
 
-//var hundreds = function(userInput){};
+//var hundredsFunction = function(userInput){};
 
-//var thousands = function(userInput){};
+//var thousandsFunction = function(userInput){};
 
 
 // ui logic
