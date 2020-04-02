@@ -20,3 +20,15 @@
 
 // ui logic
 // take in user data, output translated number to page
+$(document).ready(function(){
+  $("form#numeralsForm").submit(function(event) {
+    event.preventDefault(); 
+    var userInput = $("#numbers").val();
+    alert("hi");
+    var result = translate(userInput);
+    
+
+
+  });
+
+});
